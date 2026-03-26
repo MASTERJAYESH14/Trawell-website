@@ -5,14 +5,14 @@ import { getFirestore } from "firebase/firestore";
 // TODO: Replace the following with your app's Firebase project configuration
 // You can find these in the Firebase Console -> Project Settings
 const firebaseConfig = {
-  apiKey: "AIzaSyC8O7VP8SfOU3gP1M87Ppis5pydgctnEpI",
-  authDomain: "trawell-app-b6f3f.firebaseapp.com",
-  databaseURL: "https://trawell-app-b6f3f-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "trawell-app-b6f3f",
-  storageBucket: "trawell-app-b6f3f.firebasestorage.app",
-  messagingSenderId: "675187781044",
-  appId: "1:675187781044:web:00052f984d2d3f0a3dd6e1",
-  measurementId: "G-WL216W9WP9"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
